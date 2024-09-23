@@ -1,0 +1,18 @@
+
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import butter , lfilter
+
+np.random.seed(0)
+pollution_data=np.random.normal(1440) *2 
+x=np.random.uniform(100,900,1440)
+noise_x=x+pollution_data
+
+def PLevel_avg(data,time):
+    for i in range(1,24):
+        res=pollution_data[1]/60
+        retirn res
+        
+output=lfilter(pollution_data)
+
+plt.plot(pollution_data)
